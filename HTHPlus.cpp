@@ -6,7 +6,9 @@ HTHPlus::HTHPlus()
 
 HTHPlus::~HTHPlus()
 {
-	//delete peliculas;
+	for(int i=0; i<peliculas.size(); i++){
+		delete peliculas[i];
+	}
 }
 
 void HTHPlus::addPelicula(Pelicula* peli){
